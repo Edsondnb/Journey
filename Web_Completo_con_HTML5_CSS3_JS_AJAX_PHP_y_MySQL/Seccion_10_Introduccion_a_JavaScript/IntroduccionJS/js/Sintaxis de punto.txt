@@ -1,0 +1,2 @@
+imperativa : modifica el objeto actual 
+declaritva no lo hace.

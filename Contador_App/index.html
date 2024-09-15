@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section class="contenedor">
+        <div class="contador__general">
+            <div class="contador__cantidad">
+                <p class="contador__cantidad--numero center">
+                    S/.<span class="icono-soles" id="total"></span>
+                </p>
+            </div>
+            <div class="contador__estadisticas">
+                <div class="contador__estadisticas--texto">
+                    <p class="ingreso-monto">Monto agregado recientemente</p>
+                    <span id="lblIngreso"></span>
+                </div>
+                <div class="contador__estadisticas--texto">
+                    <p class="salida-monto">Monto retirado recientemente</p>
+                    <span id="lblRetiro"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor formularios">
+        <div class="form__operacion--agregar">
+            <div class="form__fondo">
+                <div class="form__agregado--detalle">
+                    <p>Agregar monto:</p>
+                    <form action="">
+                        <div class="form__agregado--numero">
+                            <input type="number" name="" id="ingresar-monto" min="0" pattern="^\d*(\.\d{0,2})?$" >
+                        </div>
+                        <div class="form__agregado--boton">
+                            <button class="form__button" id="btn-agregar">Agregar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form__historial">
+                    <p class="form__historial--titulo">Historial de monto agregado:</p>
+                    <ul class="form__historial--lista">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="form__operacion--retirar">
+            <div class="form__fondo">
+                    <div class="form__retirado--detalle">
+                        <p>Retirar monto:</p>
+                        <form action="">
+                            <div class="form__agregado--numero">
+                                <input type="number" name="" id="retiro-monto">
+                            </div>
+                            <div class="form__agregado--opciones">
+                                <div class="form__button--select" >
+                                    <select name="categoria" id="categoria">
+                                        <option value="" selected disabled>-Seleccione-</option>
+                                        <option value="1">Salud</option>
+                                        <option value="2">Alimentacion</option>
+                                        <option value="3">Tecnologia</option>
+                                        <option value="4">Ropa</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <button class="form__button form__button--alt-color" id="btn-retirar">Retirar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form__historial">
+                        <p class="form__historial--titulo">Historial de monto retirado:</p>
+                        <ul class="form__historial--listaRetiro">
+                            
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

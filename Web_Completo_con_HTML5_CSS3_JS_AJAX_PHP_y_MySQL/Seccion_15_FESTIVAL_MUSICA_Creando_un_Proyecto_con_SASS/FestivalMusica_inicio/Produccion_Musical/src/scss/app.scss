@@ -1,0 +1,26 @@
+@import 'base/nomralize';
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400;700;900&family=Open+Sans:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'layout/header';
+@import 'layout/video';
+@import 'layout/festival';
+@import 'layout/lineup';
+@import 'layout/galeria';
+@import 'layout/boletos';
+@import 'layout/footer';
+
+
+body{
+    font-family: $fuentePrincipal;
+} 
+
+h1{
+    font-family: $fuentePrincipal;
+    font-size: 20px;
+}
+
+p{
+    font-family: $fuentePrincipal;
+}

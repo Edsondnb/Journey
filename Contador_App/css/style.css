@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.2rem;
+    font-family: "Outfit", sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 98%;
+}
+
+.contador__general{
+    display: flex;
+    flex-direction: column;
+    background-color: #96CEB4;
+}
+
+.contador__cantidad{
+    padding: 2rem 0;
+}
+
+.contador__cantidad--numero{
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+
+.contador__estadisticas{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 3rem 0;
+    
+}
+
+.contador__estadisticas--texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contador__estadisticas--texto p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contador__estadisticas--texto span{
+    background-color: #FFAD60;
+    padding: 2rem 0;
+    width: 10rem;
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
+
+}
+
+/**************************************/
+/******** Formularios ********/
+/**************************************/
+
+.formularios{
+    display: flex;
+    justify-content: space-between;
+    height: 80rem;
+}
+
+.form__operacion--agregar{
+    
+    background-color: #FFEEAD;
+    min-width: 50%;
+}
+
+.form__agregado--detalle p,
+.form__retirado--detalle p {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form__fondo{
+    margin-top: 7rem;
+}
+
+.form__agregado--detalle,
+.form__retirado--detalle{
+    /*margin: 0 auto;*/
+    padding: 0 10rem;
+}
+
+.form__agregado--numero{
+    display: block;
+}
+
+.form__agregado--numero input{
+    width: 100%;  
+    border-radius: 0.5rem;
+    border-style: none;
+    height: 3rem;
+}
+
+.form__agregado--boton{
+    display: block;
+}
+.form__button{
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem ;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #179BAE;
+    color: #fff;
+}
+
+.form__button:hover{
+    background-color: #6eb8c4;
+}
+
+.form__button--alt-color {
+    background-color: #EF5A6F;
+}
+
+.form__button--alt-color:hover{
+    background-color: #ec8896;
+}
+
+.form__operacion--retirar{
+    background-color: #FFAD60;
+    min-width: 50%;
+}
+
+.form__agregado--opciones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__button--select{
+    margin-top: 1rem;
+}
+
+.form__button--select select{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border: none;
+    background-color: #a13939;
+    color: #fff;
+}
+
+/**************************************/
+/******** HISTORIAL ********/
+/**************************************/
+
+.form__historial{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.form__historial--titulo{
+    text-align: center;
+    font-size: 2.4rem;
+    
+}
+
+.form__historial--lista,
+.form__historial--listaRetiro{
+    padding: 0 12rem;
+    
+}
+
+.form__historial--vineta{
+    list-style: square;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    line-height: 2.4rem;
+}
+
+
+

@@ -1,0 +1,27 @@
+//importnado dependencias instaldas en package  
+      //series => ejecuntado multiples funciones
+                 //importar condigo de gulp
+const {series, parallel} = require('gulp');
+
+
+function css( done ){
+    console.log("Copilando SASS");
+
+    done();
+}
+
+function javascript(done){
+    console.log('copilando javascript');
+    done();
+}
+
+function hmtl(done){
+    console.log('Minificando');
+    done();
+}
+
+
+//exportando --- ejecutando gulp en terminal gulp + nombre de la funcion
+exports.css = css;
+exports.javascript = javascript;
+exports.tareas = series(css, javascript,hmtl);
